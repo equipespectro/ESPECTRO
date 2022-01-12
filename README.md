@@ -14,13 +14,13 @@ a fim de auxiliar na organização pessoal para evitar a quebra da rotina.
 
 | Código  | Funcionalidade  | Situação |      |
 | :------------ |:---------------:| :-----:| --------:|
-| RF_B001      | Cadastrar Usuário | Desenvolvido| funções app.get('/cadastro') e app.post('/cadastro)
-| RF_B002     | Autenticar Usuário       |   Desenvolvido |
-| RF_B003  | Fazer Login       |    Desenvolvido |
+| RF_B001      | Cadastrar Usuário | Desenvolvido| funções app.get('/cadastro') e app.post('/cadastro) no arquivo index.js |
+| RF_B002     | Autenticar Usuário       |   Desenvolvido | function initialize(passport, getUserByEmail, getUserById) no arquivo passport-config.js |
+| RF_B003  | Fazer Login       |    Desenvolvido | função passport.authenticate('local', {successRedirect: '/inicio'...} no arquivo index.js|
 | RF_B003.1     | Recuperar Senha | Não Iniciado|
 | RF_B004     | Fazer Logout       |   Não Iniciado |
-| RF_B005  | Mostrar Tela Home       |    Desenvolvido|
-| RF_B005.1     | Adicionar Atividade  | Desenvolvido|
+| RF_B005  | Mostrar Tela Home       |    Desenvolvido| rota app.get('/inicio') no arquivo index.js |
+| RF_B005.1     | Adicionar Atividade  | Desenvolvido| botão de classe addTarefa no arquivo listaTarefas.ejs e ação de adicionar tarefa na function adicionaTarefa no arquivo script.js|
 | RF_B005.2     | Remover Atividade       |   Em desenvolvimento|
 | RF_B006 | Mostrar tela Perfil do Usuário       |    Desenvolvido |
 | RF_B006.1     | Adicionar Nome de exibição      |   Desenvolvido |
