@@ -5,8 +5,7 @@
 Bernardo Castro Diniz;
 - Cliente: Associação Fortaleza Azul;
 
-A aplicação será feita em parceria com a Associação Fortaleza Azul, que foi a
-idealizadora inicial do projeto, será usada por pessoas com TEA e pelos pais e/ou
+A aplicaçãofeita em parceria com a Associação Fortaleza Azul, idealizadora inicial do projeto, será usada por pessoas com TEA e pelos pais e/ou
 responsáveis de pessoas com TEA para o monitoramento e controle da rotina diária
 a fim de auxiliar na organização pessoal para evitar a quebra da rotina.
 
