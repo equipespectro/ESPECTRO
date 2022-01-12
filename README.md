@@ -28,5 +28,5 @@ a fim de auxiliar na organização pessoal para evitar a quebra da rotina.
 | RF_B006.2  | Adicionar Avatar       |    Não Iniciado |   |
 
 ##Download do executável da Versão 0.2 disponivel aqui
-**[Windows](https://drive.google.com/file/d/1xmq5NTEs6BIaV2B31DzNkkyka6WpIOXn/view?usp=sharing"Windows")**
-**[MacOS](https://drive.google.com/file/d/1xlLzH_Furuog0mBhvVtylXW3-HYNKGlv/view?usp=sharing"MacOS")**
+*[Windows](https://drive.google.com/file/d/1xmq5NTEs6BIaV2B31DzNkkyka6WpIOXn/view?usp=sharing"Windows")**
+*[MacOS](https://drive.google.com/file/d/1xlLzH_Furuog0mBhvVtylXW3-HYNKGlv/view?usp=sharing"MacOS")**
