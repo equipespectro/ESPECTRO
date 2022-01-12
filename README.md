@@ -10,4 +10,5 @@ idealizadora inicial do projeto, será usada por pessoas com TEA e pelos pais e/
 responsáveis de pessoas com TEA para o monitoramento e controle da rotina diária
 a fim de auxiliar na organização pessoal para evitar a quebra da rotina.
 
-Mapeamento de Funcionalidades
+# Mapeamento de Funcionalidades
+
