@@ -27,6 +27,6 @@ a fim de auxiliar na organização pessoal para evitar a quebra da rotina.
 | RF_B006.1     | Adicionar Nome de exibição      |   Desenvolvido | Nome adicionado no cadastro é exibido na tela inicial através do requerimento name: req.user.name na rota app.get('/inicio') e exibido na pagina inicio.ejs com o codigo Perfil de <%= name%> |
 | RF_B006.2  | Adicionar Avatar       |    Não Iniciado |   |
 
-##Download do executável da Versão 0.2 disponivel aqui \/##
+##Download do executável da Versão 0.2 disponivel aqui
 **[Windows](https://drive.google.com/file/d/1xmq5NTEs6BIaV2B31DzNkkyka6WpIOXn/view?usp=sharing"Windows")**
 **[MacOS](https://drive.google.com/file/d/1xlLzH_Furuog0mBhvVtylXW3-HYNKGlv/view?usp=sharing"MacOS")**
