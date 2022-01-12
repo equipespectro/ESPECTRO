@@ -12,7 +12,7 @@ a fim de auxiliar na organização pessoal para evitar a quebra da rotina.
 
 ### Mapeamento de Funcionalidades
 
-| Código  | Funcionalidade  | Situação |  Codigo/Arquivo    |
+| Código  | Funcionalidade  | Situação |  Codigo/Arquivo|
 | :------------ |:---------------:| :-----:| --------:|
 | RF_B001      | Cadastrar Usuário | Desenvolvido| funções app.get('/cadastro') e app.post('/cadastro) no arquivo index.js |
 | RF_B002     | Autenticar Usuário       |   Desenvolvido | function initialize(passport, getUserByEmail, getUserById) no arquivo passport-config.js |
