@@ -1,0 +1,54 @@
+<html lang="en"> 
+  <head>
+    <meta charset="utf-8">
+    <title>APP da FAZ</title>
+    <link href="/css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="corpoSite temaPrincipal">
+      <nav>
+        <li><a href="/inicio">Home</a></li>
+        <li><a href="/tarefas">Tarefas</a></li>
+        <li><a href="/calendario">Calendário</a></li>
+      </nav>
+
+      <main>
+        <%
+          let _nomePagina = "";
+          switch(pagina){
+            case "cadastro":
+              _nomePagina = "cadastro.ejs";
+            break;
+
+            case "tarefas":
+              _nomePagina = "listaTarefas.ejs";
+            break;
+
+            case "inicio":
+            _nomePagina = "inicio.ejs";
+            break;
+
+            case "calendario":
+              _nomePagina = "calendario.ejs";
+            break;
+
+            default:
+              _nomePagina = "login.ejs";
+            break;
+          }
+        %>
+        <%- include(`../partes/${_nomePagina}`); %>
+        <div class="<%= typeof nomeModal == "undefined" ? 'slotModais oculto' : 'slotModais'%>">
+          <a class="fundoModal" href="/tarefas"></a>
+          <div class="modal">
+            <% if(typeof nomeModal != "undefined"){%>
+            <%- include(`../partes/modais/${nomeModal}.ejs`); %>
+            <% } %>
+          </div>
+        </div>
+      </main>
+    </div>
+    
+    <script src='/js/script.js'></script>
+  </body>
+</html>

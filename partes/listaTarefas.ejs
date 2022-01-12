@@ -1,0 +1,32 @@
+<h2>Lista de tarefas</h2>
+<button type="button" class="addTarefa"><a href="/novaTarefa">+</a></button>
+<div class="listaTarefas">
+  <% if(typeof tarefas != "undefined" && Object.values(tarefas).length > 0){ 
+    Object.values(tarefas).forEach(tarefa => { %>
+    <div class="cardTarefa">
+      <a href=<%= `/tarefa?id=${tarefa.id}` %>>
+        <h4>
+          <%= tarefa.descricaoTarefa %>
+        </h4>
+        <span class="slotDatas">
+          <%= `${script.dataHumano(tarefa.dataInicial)} ~ ${script.dataHumano(tarefa.dataFinal)}` %>
+        </span>
+      </a>
+      <div class="slotBotoes">
+        <!-- <button type="button"> -->
+          <!-- <a href= <%= `/editaTarefa?id=${tarefa.id}` %>>&#9998;</a>
+        </button> -->
+
+        <button type="button">
+          <a href= <%= `/removeTarefa?id=${tarefa.id}` %>>&times;</a>
+        </button>
+      </div>
+    </div>
+    <% });  
+  %>
+  <% } else { %>
+    <p class="corAlerta">Nenhuma tarefa cadastrada</p>
+  <% } %>
+</div>
+
+<script src='/js/script.js'></script>

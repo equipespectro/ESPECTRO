@@ -1,0 +1,62 @@
+<%
+var fs = require('fs');
+var { v4: uuidv4 } = require("uuid");
+var prefixo = "am2olinda@";
+var tarefas = {};
+
+function pegaTarefas() {
+  fs.readFile('./tarefas.txt', "utf8", (err, data) => {
+    if (err) {
+      console.warn(err);
+      throw err;
+    }
+    if (data) {
+      tarefas = JSON.parse(data);
+    }
+
+    return tarefas;
+  });
+}
+
+function salvaTarefas() {
+  if (tarefas) {
+    const _txtTarefas = JSON.stringify(tarefas);
+
+    fs.writeFile("./tarefas.txt", _txtTarefas, err => {
+      if (err) {
+        console.warn(err);
+        throw err;
+      }
+
+      console.log("Tarefas salvas");
+    });
+  }
+}
+
+function adicionaTarefa(novaTarefa) {
+  if (novaTarefa) {
+    const _novoId = uuidv4();
+    novaTarefa.id = _novoId;
+    tarefas[_novoId] = { ...novaTarefa };
+
+    // salvaTarefas();
+  }
+}
+
+function alteraTarefa(tarefaAlterada) {
+  if (tarefas && tarefas[tarefaAlterada.id]) {
+    tarefa[tarefaAlterada.id] = { ...tarefaAlterada };
+  }
+}
+
+function removeTarefa(idTarefa) {
+  delete tarefas[idTarefa];
+}
+
+function teste() {
+  // adicionaTarefa({nome:"teste",categoria:"xablau"});
+  // tarefas = localStorage.getItem(`${prefixo}tarefas`);
+  console.log("tarefas", tarefas);
+  // salvaTarefas();
+}
+%>

@@ -1,0 +1,30 @@
+{
+  "name": "espectro",
+  "version": "1.0.0",
+  "description": "",
+  "bin": "index.js",
+  "pkg": {
+    "assets": [ "node_modules/**/*", "views/**/*", "css/**/*","js/**/*", "partes/**/*"],
+    "targets": [ "node12-macos-x64", "node10-win-x64"]
+  },
+
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "express-flash": "^0.0.2",
+    "express-session": "^1.17.2",
+    "passport": "^0.5.2",
+    "passport-local": "^1.0.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "dotenv": "^10.0.0",
+    "nodemon": "^2.0.15"
+  }
+}

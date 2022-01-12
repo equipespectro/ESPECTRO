@@ -1,0 +1,20 @@
+<form action="/editaTarefa" method="post">
+    <input type="text" name="id" id="id" value=<%=tarefa.id%> hidden/>
+    <p>
+      <label for="dataInicial">Data inicial</label><br/>
+      <input type="date" name="dataInicial" id="dataInicial" value=<%=tarefa.dataInicial%> required>
+    </p>
+  
+    <p>
+      <label for="dataFinal">Data final</label><br/>
+      <input type="date" name="dataFinal" id="dataFinal" value=<%=tarefa.dataFinal%> required>
+    </p>
+  
+    <p>
+      <label for="descricaoTarefa">Descrição tarefa</label><br/>
+      <textarea placeholder="Descrição da tarefa" name="descricaoTarefa" id="descricaoTarefa" required><%=tarefa.descricaoTarefa%></textarea>
+    </p>
+    <p>
+      <button type="submit">Alterar</button>
+    </p>
+  </form>

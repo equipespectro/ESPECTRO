@@ -1,0 +1,34 @@
+<html lang="en"> 
+  <head>
+    <meta charset="utf-8">
+    <title>APP da FAZ</title>
+    <link href="/css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <main>
+        <h1>CADASTRO</h1>
+    <div class="containerForm">
+       <form action="/cadastro" method = "POST">
+        <div>
+          <label for="name">Nome</label>
+          <input type="text" id="name" name="name"
+        required>
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email"
+        required>
+        </div>  
+        <div>
+          <label for="password">Senha</label>
+          <input type="password" id="password" name="password"
+        required>
+        </div>
+        <button type="submit">Cadastrar</button>
+     </form>
+
+<a href="/login">Se já tiver cadastro, clique aqui!</a>
+</div>
+</main>
+</body>
+</html>
