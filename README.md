@@ -12,9 +12,9 @@ a fim de auxiliar na organização pessoal para evitar a quebra da rotina.
 
 ### Mapeamento de Funcionalidades
 
-| Código  | Funcionalidade  | Situação |
-| :------------ |:---------------:| -----:|
-| RF_B001      | Cadastrar Usuário | Desenvolvido|
+| Código  | Funcionalidade  | Situação |      |
+| :------------ |:---------------:| :-----:| --------:|
+| RF_B001      | Cadastrar Usuário | Desenvolvido| funções app.get('/cadastro') e app.post('/cadastro)
 | RF_B002     | Autenticar Usuário       |   Desenvolvido |
 | RF_B003  | Fazer Login       |    Desenvolvido |
 | RF_B003.1     | Recuperar Senha | Não Iniciado|
