@@ -1,0 +1,114 @@
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no" charset="utf-8">
+    <title>APP da FAZ</title>
+    <link href="/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="/css/font-awesome/css/all.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.6.3/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.6.3/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script>
+        window.addEventListener("DOMContentLoaded", () => {
+            const firebaseConfig = {
+                apiKey: "AIzaSyCc0CP1kitkYn6uNxSuofaenJy3GMHs-q4",
+                authDomain: "espectro-76402.firebaseapp.com",
+                projectId: "espectro-76402",
+                storageBucket: "espectro-76402.appspot.com",
+                messagingSenderId: "264375045825",
+                appId: "1:264375045825:web:4e9105a3c8f517eb99ce40",
+                measurementId: "G-2HQMJ1FRXC"
+            };
+
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+
+            firebase.auth().setPersistence(firebase.auth.Auth.Persistence.NONE)
+            document
+                .getElementById("login")
+                .addEventListener("submit", (event) => {
+                    event.preventDefault()
+                    const login = event.target.email.value;
+                    firebase
+                        .auth()
+
+                    .sendPasswordResetEmail(login)
+                        .then(result => {
+                            swal("Espectro", "Email enviado com sucesso! \n Por favor cheque seu e-mail.", "success").then((value) => {
+                                window.location.assign("./login");
+                            });
+
+                        })
+                        .catch(error => {
+                            swal("Espectro", error.message, "error")
+                        })
+
+
+
+                })
+        })
+    </script>
+</head>
+
+<body>
+    <main>
+        <h1>ESPECTRO</h1>
+        <h3>Solução digital para jovens com TEA
+        </h3>
+        <h4>Redefina sua senha</h4>
+        <% if (messages.error) { %>
+            <%= messages.error %>
+                <% } %>
+                    <div class="containerForm">
+                        <form id="login">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <i class="fas fa-user"></i>
+                                    </span>
+                                    <input class="form-control left-border-none" type="email" id="email" name="email" placeholder="seuemail@email.com" style="width: 80%;" required>
+                                </div>
+
+                            </div>
+
+                            <button type="submit" style='
+                            right: 40px;
+                            position: relative; margin-bottom: -20;'>Enviar E-mail</button>
+
+                        </form>
+
+                    </div>
+
+                    <div class="theme-switch-wrapper" style="
+                    position: relative;
+                    justify-content: center;
+
+                    padding: 15px;
+
+                ">
+                        <label class="theme-switch" for="checkbox">
+                            <input type="checkbox" id="checkbox" />
+                            <div class="slider round"></div>
+                      </label>
+                        <em>  Ativar Modo Escuro!</em>
+                    </div>
+                    <div class=" linkCadastro ">
+                        <a href="/cadastro ">Ou cadastre-se aqui!</a>
+                    </div>
+
+    </main>
+</body>
+<script>
+    const $html = document.querySelector('html')
+    const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+    toggleSwitch.addEventListener('change', function() {
+        $html.classList.toggle('dark-mode')
+    });
+</script>
+
+</html>

@@ -1,34 +1,54 @@
-<html lang="en"> 
-  <head>
-    <meta charset="utf-8">
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=100px, height=device-height, initial-scale=1.0, user-scalable=no" charset="utf-8">
     <title>APP da FAZ</title>
     <link href="/css/style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
+    <link href="/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="/css/font-awesome/css/all.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.6.3/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.6.3/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
     <main>
         <h1>CADASTRO</h1>
-    <div class="containerForm">
-       <form action="/cadastro" method = "POST">
-        <div>
-          <label for="name">Nome</label>
-          <input type="text" id="name" name="name"
-        required>
-        </div>
-        <div>
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email"
-        required>
-        </div>  
-        <div>
-          <label for="password">Senha</label>
-          <input type="password" id="password" name="password"
-        required>
-        </div>
-        <button type="submit">Cadastrar</button>
-     </form>
+        <div class="containerForm">
+            <form action="/cadastro" method="POST">
 
-<a href="/login">Se já tiver cadastro, clique aqui!</a>
-</div>
-</main>
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="fas fa-user"></i>
+                        </span>
+                        <input class="form-control left-border-none" type="email" id="email" name="email" placeholder="seuemail@email.com" style="width: 80%;" required>
+                    </div>
+
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="fas fa-lock"></i>
+                        </span>
+                        <input class="form-control left-border-none" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;" type="password" id="password" name="password" style="width: 80%;" required>
+                    </div>
+
+                </div>
+                <button type="submit" style="
+                right: 40px;
+                position: relative; margin-bottom: -20;">Cadastrar</button>
+            </form>
+            <div class=" linkCadastro ">
+                <a href="/login">Se já tiver cadastro, clique aqui!</a>
+            </div>
+
+        </div>
+    </main>
 </body>
+
 </html>
