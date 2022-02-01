@@ -28,7 +28,7 @@
     "express-flash": "^0.0.2",
     "express-session": "^1.17.2",
     "firebase": "^9.6.3",
-    "firebase-admin": "^10.0.1",
+    "firebase-admin": "^10.0.2",
     "passport": "^0.5.2",
     "passport-local": "^1.0.0",
     "uuid": "^8.3.2"
