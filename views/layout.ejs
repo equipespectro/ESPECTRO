@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>APP da FAZ</title>
-    <link href="/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />
     <link href="/css/font-awesome/css/all.css" rel="stylesheet" />
 </head>
 
@@ -59,14 +59,17 @@
           }
         %>
                 <%- include(`../partes/${_nomePagina}`); %>
-                    <div class="<%= typeof nomeModal == " undefined " ? 'slotModais oculto' : 'slotModais'%>">
+
+                    <div class="<%= nomeModal ==  'oculto' ? 'slotModais oculto' : 'slotModais'%>">
                         <a class="fundoModal" href="/tarefas"></a>
                         <div class="modal">
-                            <% if(typeof nomeModal != "undefined"){%>
+                            <% if(nomeModal != "oculto"){%>
                                 <%- include(`../partes/modais/${nomeModal}.ejs`); %>
                                     <% } %>
                         </div>
+
                     </div>
+
         </main>
     </div>
 

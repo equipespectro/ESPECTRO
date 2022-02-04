@@ -139,20 +139,22 @@ app.post('/cadastro', function(req, res) {
 app.get('/inicio', (req, res) => {
     console.log("Requisicao chamada : /inicio")
     res.render('layout.ejs', {
-
         name: "Teste",
         pagina: "inicio",
         script: "script",
+        nomeModal: "oculto"
     });
+
 });
 
 app.get('/calendario', (req, res) => {
     res.render('layout.ejs', {
         pagina: "calendario",
         script: "script",
+        nomeModal: "oculto"
     });
 });
-/*
+
 app.get('/tarefas', (req, res) => {
     // console.log(script.pegaTarefas());
     // console.log(req.body);
@@ -178,11 +180,12 @@ app.get('/tarefas', (req, res) => {
             pagina: "tarefas",
             tarefas: tarefas,
             script: script,
+            nomeModal: "oculto"
         });
     });
 });
-*/
-/*
+
+
 app.get('/tarefa', (req, res) => {
     // console.log(req.originalUrl);
 
@@ -204,7 +207,7 @@ app.get('/tarefa', (req, res) => {
         });
     });
 });
-*/
+
 app.get('/novaTarefa', (req, res) => {
     res.render('layout.ejs', {
         pagina: "tarefas",
@@ -288,6 +291,7 @@ app.post('/criaTarefa', (req, res) => {
             pagina: "tarefas",
             tarefas: _tarefas,
             script: script,
+            nomeModal: "oculto"
         });
     });
 })
