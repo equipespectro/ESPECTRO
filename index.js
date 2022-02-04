@@ -266,6 +266,7 @@ app.get('/removeTarefa', (req, res) => {
                 pagina: "tarefas",
                 tarefas: tarefas,
                 script: script,
+                nomeModal: "oculto"
             });
         });
     });
