@@ -381,7 +381,6 @@ form button[type=submit] {
         flex-direction: column;
         justify-content: left;
         align-items: center;
-        background: var(--corPrincipal);
     }
     .corpoSite>nav>li {
         width: 100%;
@@ -391,7 +390,6 @@ form button[type=submit] {
         display: flex;
         justify-content: center;
         align-items: center;
-        background: var(--corPrincipal);
         box-shadow: 0 0 20rem rgba(20, 20, 20, 0.3) inset;
         cursor: pointer;
     }
