@@ -14,6 +14,7 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
     <script>
+        var darkmode = false;
         window.addEventListener("DOMContentLoaded", () => {
             const firebaseConfig = {
                 apiKey: "AIzaSyCc0CP1kitkYn6uNxSuofaenJy3GMHs-q4",
@@ -103,7 +104,7 @@
                         <em>  Ativar Modo Escuro!</em>
                     </div>
                     <div class=" linkCadastro ">
-                        <a href="/recover ">Esqueceu sua senha?</a>
+                        <a href="/recover">Esqueceu sua senha?</a>
                     </div>
                     <div class=" linkCadastro ">
                         <a href="/cadastro ">Ou cadastre-se aqui!</a>
@@ -116,6 +117,9 @@
     const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
     toggleSwitch.addEventListener('change', function() {
         $html.classList.toggle('dark-mode')
+        localStorage.darkmode = !darkmode;
+        darkmode = !darkmode;
+        //localStorage.setItem("darkmode", true);
     });
 </script>
 

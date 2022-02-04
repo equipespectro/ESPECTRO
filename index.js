@@ -51,14 +51,6 @@ const passport = require('passport')
 const flash = require('express-flash')
 const session = require('express-session')
 
-const initializePassport = require('./passport-config');
-//const { getAuth } = require('firebase/auth');
-initializePassport(
-    passport,
-    email => users.find(user => user.email === email),
-    id => users.find(user => user.id === id)
-)
-
 const users = []
 
 
@@ -160,7 +152,7 @@ app.get('/calendario', (req, res) => {
         script: "script",
     });
 });
-
+/*
 app.get('/tarefas', (req, res) => {
     // console.log(script.pegaTarefas());
     // console.log(req.body);
@@ -189,7 +181,8 @@ app.get('/tarefas', (req, res) => {
         });
     });
 });
-
+*/
+/*
 app.get('/tarefa', (req, res) => {
     // console.log(req.originalUrl);
 
@@ -211,7 +204,7 @@ app.get('/tarefa', (req, res) => {
         });
     });
 });
-
+*/
 app.get('/novaTarefa', (req, res) => {
     res.render('layout.ejs', {
         pagina: "tarefas",

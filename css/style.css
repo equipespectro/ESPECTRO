@@ -214,22 +214,19 @@ form button[type=submit] {
 }
 
 .corpoSite>nav {
-    height: 10%;
+    height: 8%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background: var(--corPrincipal);
 }
 
 .corpoSite>nav>li {
-    /* width:50%; */
+    width: 10%;
     height: 100%;
     padding: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: var(--corPrincipal);
-    box-shadow: 0 0 20rem rgba(20, 20, 20, 0.3) inset;
     cursor: pointer;
 }
 
