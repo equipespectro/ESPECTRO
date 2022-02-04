@@ -379,7 +379,7 @@ form button[type=submit] {
         height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: left;
+        justify-content: space-around;
         align-items: center;
     }
     .corpoSite>nav>li {
@@ -390,7 +390,6 @@ form button[type=submit] {
         display: flex;
         justify-content: center;
         align-items: center;
-        box-shadow: 0 0 20rem rgba(20, 20, 20, 0.3) inset;
         cursor: pointer;
     }
     .slotModais>div {
