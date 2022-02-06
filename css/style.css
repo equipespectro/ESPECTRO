@@ -162,6 +162,12 @@ h1 {
     width: 100%;
 }
 
+#descricaoTarefa {}
+
+.h11 {
+    font-size: 50px;
+}
+
 h3 {
     color: var(--h1h2-color) !important;
     margin-top: 0px !important;
@@ -264,6 +270,8 @@ form button[type=submit] {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 100px;
+    margin: auto;
     /* text-align:center; */
     /* border:1px solid #f00; */
 }
@@ -317,13 +325,16 @@ form button[type=submit] {
 }
 
 .addTarefa {
-    --tamanho: 3rem;
+    --tamanho: 7rem;
     background: var(--corPrincipal);
     width: var(--tamanho);
     height: var(--tamanho);
     font-size: calc(var(--tamanho)*0.6);
     border-radius: 50%;
     color: #eee;
+    bottom: 168px;
+    right: 92px;
+    position: absolute;
 }
 
 .corAlerta {
@@ -396,6 +407,18 @@ form button[type=submit] {
         --largura: 60%;
         --altura: 50%;
         margin: calc((100% - var(--altura))/3) calc((100% - var(--largura))/2);
+    }
+    .addTarefa {
+        --tamanho: 3rem;
+        background: var(--corPrincipal);
+        width: var(--tamanho);
+        height: var(--tamanho);
+        font-size: calc(var(--tamanho)*0.6);
+        border-radius: 50%;
+        color: #eee;
+        bottom: 11px;
+        right: 92px;
+        position: absolute;
     }
 }
 
