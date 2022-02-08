@@ -250,7 +250,7 @@ form button[type=submit] {
 
 .corpoSite>main {
     /* border:1px solid #f00; */
-    background: #efefef;
+    background: #ffffff;
     text-align: center;
     display: flex;
     flex-direction: column;
