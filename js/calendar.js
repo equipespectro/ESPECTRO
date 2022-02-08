@@ -114,6 +114,7 @@ var cal = {
         let container = document.getElementById("cal-container"),
             cTable = document.createElement("table");
         cTable.id = "calendar";
+        let cale = document.getElementById("cal-wrap");
         container.innerHTML = "";
         container.appendChild(cTable);
 
@@ -140,6 +141,12 @@ var cal = {
                 cCell.innerHTML = `<div class="dd">${squares[i]}</div>`;
                 if (cal.data[squares[i]]) {
                     cCell.innerHTML += "<div class='evt'>" + cal.data[squares[i]] + "</div>";
+                    const para = document.createElement("div");
+                    para.className = "compromissos";
+                    para.innerHTML = "<span id=dia>Dia " + squares[i] + "</span><span id=atividade>" + cal.data[squares[i]] + "</span>";
+
+                    document.getElementById("cal-wrap").appendChild(para);
+
                 }
                 cCell.onclick = () => { cal.show(cCell); };
             }
@@ -149,8 +156,8 @@ var cal = {
                 cRow = document.createElement("tr");
                 cRow.classList.add("day");
             }
-        }
 
+        }
         // (C5) REMOVE ANY PREVIOUS ADD/EDIT EVENT DOCKET
         cal.close();
     },
@@ -163,15 +170,18 @@ var cal = {
 
         // (D2) UPDATE EVENT FORM
         cal.hfTxt.value = isEdit ? cal.data[cal.sDay] : "";
-        cal.hfHead.innerHTML = isEdit ? "EDIT EVENT" : "ADD EVENT";
+        cal.hfHead.innerHTML = isEdit ? "Editar compromisso" : "Adicionar compromisso";
         cal.hfDate.innerHTML = `${cal.sDay} ${cal.mName[cal.sMth]} ${cal.sYear}`;
         if (isEdit) { cal.hfDel.classList.remove("ninja"); } else { cal.hfDel.classList.add("ninja"); }
         cal.hForm.classList.remove("ninja");
+        document.getElementById("calendar").classList.add("naove");
+
     },
 
     // (E) CLOSE EVENT DOCKET
     close: () => {
         cal.hForm.classList.add("ninja");
+        document.getElementById("calendar").classList.remove("naove");
     },
 
     // (F) SAVE EVENT
