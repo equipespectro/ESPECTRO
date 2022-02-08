@@ -165,7 +165,15 @@ h1 {
 #descricaoTarefa {}
 
 .h11 {
-    font-size: 50px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 100px;
+    line-height: 125%;
+    /* identical to box height, or 37px */
+    text-align: center;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
 }
 
 h3 {
