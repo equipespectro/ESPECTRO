@@ -28,7 +28,7 @@ a fim de auxiliar na organização pessoal para evitar a quebra da rotina.
 | RFE_001  | Mostrar Calendário       |    Desenvolvido | Arquivo calendar.js na pasta js e arquivo calendario.ejs na pasta partes  |
 
 ### Download do executável da Versão 2.0 disponivel aqui
-Logo...
+[Windows e MacOS](https://drive.google.com/drive/folders/12RWUymv3IE5wotv_KN_1DxNjBmvloEBQ?usp=sharing)
 
 
 ### Download do executável da Versão 0.2 disponivel aqui
