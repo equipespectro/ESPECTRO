@@ -21,7 +21,7 @@ a fim de auxiliar na organização pessoal para evitar a quebra da rotina.
 | RF_B004     | Fazer Logout       |   Desenvolvido | Botão com link de redirecionamento /sessionLogout e função app.get('/sessionLogout') no arquivo index.js   |
 | RF_B005  | Mostrar Tela Home       |    Desenvolvido|rota app.get('/inicio') no arquivo index.js |
 | RF_B005.1     | Adicionar Atividade  | Desenvolvido|botão de classe addTarefa no arquivo listaTarefas.ejs e ação de adicionar tarefa na function adicionaTarefa no arquivo script.js|
-| RF_B005.2     | Remover Atividade       |   Desenvolvido|  Função appg.get('/removeTarefa') no arquivo index.js e botão do tipo button com link de redirecionamento para /removeTarefa no arquivo listaTarefas.ejs na pasta partes    |
+| RF_B005.2     | Remover Atividade       |   Desenvolvido|  Função app.get('/removeTarefa') no arquivo index.js e botão do tipo button com link de redirecionamento para /removeTarefa no arquivo listaTarefas.ejs na pasta partes    |
 | RF_B006 | Mostrar tela Perfil do Usuário       |    Suspenso | 
 | RF_B006.1     | Adicionar Nome de exibição      |   Desenvolvido | Nome adicionado no cadastro é exibido na tela inicial através do requerimento name: req.user.name na rota app.get('/inicio') e exibido na pagina inicio.ejs com o codigo Perfil de <%= name%> |
 | RF_B006.2  | Adicionar Avatar       |    Suspenso |   |
