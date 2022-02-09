@@ -381,6 +381,7 @@ form button[type=submit] {
     background: #f0f0f6;
     border-radius: 5px;
 }
+input, textarea {font-size:16px;}
 
 .oculto {
     opacity: 0;

@@ -189,6 +189,7 @@ var cal = {
     close: () => {
         cal.hForm.classList.add("ninja");
         document.getElementById("calendar").classList.remove("naove");
+
     },
 
     // (F) SAVE EVENT
@@ -196,6 +197,7 @@ var cal = {
         cal.data[cal.sDay] = cal.hfTxt.value;
         localStorage.setItem(`cal-${cal.sMth}-${cal.sYear}`, JSON.stringify(cal.data));
         cal.list();
+        window.location.reload();
         return false;
     },
 
@@ -205,6 +207,7 @@ var cal = {
             delete cal.data[cal.sDay];
             localStorage.setItem(`cal-${cal.sMth}-${cal.sYear}`, JSON.stringify(cal.data));
             cal.list();
+            window.location.reload();
         }
     }
 };
