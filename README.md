@@ -27,6 +27,9 @@ a fim de auxiliar na organização pessoal para evitar a quebra da rotina.
 | RF_B006.2  | Adicionar Avatar       |    Suspenso |   |
 | RFE_001  | Mostrar Calendário       |    Desenvolvido | Arquivo calendar.js na pasta js e arquivo calendario.ejs na pasta partes  |
 
+### Download do executável da Versão 1.0 disponivel aqui
+Logo...
+
 
 ### Download do executável da Versão 0.2 disponivel aqui
 [Windows](https://drive.google.com/file/d/1xmq5NTEs6BIaV2B31DzNkkyka6WpIOXn/view?usp=sharing"Windows")
