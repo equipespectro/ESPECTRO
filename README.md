@@ -1,6 +1,6 @@
 ## EQUIPE ESPECTRO #
 - Produto: Espectro* (nome temporário);
-- Versão do produto: 0.2;
+- Versão do produto: 1.0;
 - Responsáveis: Isadora Bruno Leite, Georgia Rebeka da Silva,
 Bernardo Castro Diniz, Jean Carlos Martins e Paloma Bizze;
 - Cliente: Associação Fortaleza Azul;
