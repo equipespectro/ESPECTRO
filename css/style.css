@@ -387,11 +387,27 @@ form button[type=submit] {
     visibility: hidden;
 }
 
+.inicio {
+    font-size: 80px;
+    margin: 100;
+}
+
+.inicio2 {
+    font-size: 50px;
+}
+
 @media screen and (min-width: 1000px) {
     .corpoSite {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+    }
+    .inicio {
+        font-size: 40px;
+        margin: 50;
+    }
+    .inicio2 {
+        font-size: 30px;
     }
     .corpoSite>nav {
         width: 10%;

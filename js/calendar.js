@@ -131,7 +131,9 @@ var cal = {
         cTable.appendChild(cRow);
 
         // Days in Month
+
         let total = squares.length;
+        var textoTotal = "";
         cRow = document.createElement("tr");
         cRow.classList.add("day");
         for (let i = 0; i < total; i++) {
@@ -144,6 +146,10 @@ var cal = {
                     const para = document.createElement("div");
                     para.className = "compromissos";
                     para.innerHTML = "<span id=dia>Dia " + squares[i] + "</span><span id=atividade>" + cal.data[squares[i]] + "</span>";
+                    var textoDiv = "<div class='compromissos' style='width: 1095px !important;'><span id=dia>Dia " + squares[i] + "</span><span id=atividade>" + cal.data[squares[i]] + "</span></div>";
+                    textoTotal += textoDiv;
+
+
 
                     document.getElementById("cal-wrap").appendChild(para);
 
@@ -158,6 +164,7 @@ var cal = {
             }
 
         }
+        localStorage.setItem("tarefasdia", textoTotal);
         // (C5) REMOVE ANY PREVIOUS ADD/EDIT EVENT DOCKET
         cal.close();
     },
