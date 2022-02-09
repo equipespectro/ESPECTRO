@@ -1,6 +1,6 @@
 ## EQUIPE ESPECTRO #
 - Produto: Espectro* (nome temporário);
-- Versão do produto: 1.0;
+- Versão do produto: 2.0;
 - Responsáveis: Isadora Bruno Leite, Georgia Rebeka da Silva,
 Bernardo Castro Diniz, Jean Carlos Martins e Paloma Bizze;
 - Cliente: Associação Fortaleza Azul;
@@ -27,7 +27,7 @@ a fim de auxiliar na organização pessoal para evitar a quebra da rotina.
 | RF_B006.2  | Adicionar Avatar       |    Suspenso |   |
 | RFE_001  | Mostrar Calendário       |    Desenvolvido | Arquivo calendar.js na pasta js e arquivo calendario.ejs na pasta partes  |
 
-### Download do executável da Versão 1.0 disponivel aqui
+### Download do executável da Versão 2.0 disponivel aqui
 Logo...
 
 
