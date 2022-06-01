@@ -1,1 +1,27 @@
-<div><p>Calendario</p></div>
+<link href="./css/calendar.css" rel="stylesheet">
+<script async src="./js/calendar.js"></script>
+<div>
+    <h1 class="h11">Calendario</h1>
+    <div id="cal-wrap">
+        <!-- (A) PERIOD SELECTOR -->
+        <div id="cal-date">
+            <select id="cal-mth"></select>
+            <select id="cal-yr"></select>
+        </div>
+
+        <!-- (B) CALENDAR -->
+        <div id="cal-container"></div>
+
+        <!-- (C) EVENT FORM -->
+        <form id="cal-event">
+            <h1 id="evt-head"></h1>
+            <div id="evt-date"></div>
+            <textarea id="evt-details" required></textarea>
+            <input id="evt-close" type="button" value="Fechar" />
+            <input id="evt-del" type="button" value="Deletar" />
+            <input id="evt-save" type="submit" value="Salvar" />
+        </form>
+    </div>
+</div>
+<script>
+</script>
